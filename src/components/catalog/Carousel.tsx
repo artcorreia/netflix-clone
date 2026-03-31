@@ -14,7 +14,7 @@ export function Carousel({ category }: CarouselProps) {
         </h2>
       </div>
 
-      <div className="flex gap-2 overflow-x-visible px-[4%] pb-[50px] mx-[-4%] scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+      <div className="flex gap-2 overflow-x-visible px-[4%] pb-12.5 mx-[-4%] scroll-smooth [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         {category.items.map((movie, index) => (
           <MovieCard key={index} movie={movie} />
         ))}

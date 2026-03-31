@@ -10,7 +10,7 @@ export function CardDetail({ hasProgress }: CardDetailProps) {
   const duration = getRandomDuration(hasProgress)
 
   return (
-    <div className="absolute top-full left-0 w-full bg-[#181818] rounded-b-[6px] px-4 py-[18px] opacity-0 invisible transition-all duration-200 shadow-[0_15px_30px_rgba(0,0,0,0.9)] flex flex-col gap-3 z-[2] group-hover:opacity-100 group-hover:visible group-hover:delay-[600ms]">
+    <div className="absolute top-full left-0 w-full bg-[#181818] rounded-b-md px-4 py-4.5 shadow-[0_15px_30px_rgba(0,0,0,0.9)] flex flex-col gap-3 z-2">
       <div className="flex justify-between items-center">
         <div className="flex gap-2">
           <button className="w-8 h-8 rounded-full bg-white text-black border-none flex justify-center items-center cursor-pointer hover:bg-[#e6e6e6] transition-colors">

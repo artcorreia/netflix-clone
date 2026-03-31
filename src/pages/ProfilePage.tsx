@@ -15,7 +15,7 @@ export function ProfilePage() {
 
   return (
     <main className="bg-[#141414] text-white min-h-screen flex items-center justify-center font-['Geist',sans-serif]">
-      <div className="text-center w-full max-w-[1200px] px-5">
+      <div className="text-center w-full max-w-300 px-5">
         <h1 className="text-[3.5vw] font-light mb-8 tracking-wide">
           Quem está assistindo?
         </h1>

@@ -7,19 +7,40 @@ interface ProfileCardProps {
 
 export function ProfileCard({ profile, onClick }: ProfileCardProps) {
   return (
-    <li className="group w-[10vw] min-w-[120px] max-w-[200px]">
+    <li className="w-[10vw] min-w-30 max-w-50">
       <button
         onClick={onClick}
-        className="flex flex-col items-center gap-2 w-full bg-transparent border-none cursor-pointer"
+        className="flex flex-col items-center gap-2 w-full bg-transparent border-none cursor-pointer profile-btn"
       >
-        <div className="w-full aspect-square overflow-hidden">
+        <style>{`
+          .profile-img-wrapper {
+            transition: transform 0.3s ease-out, outline 0.3s ease-out;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+          }
+          
+          .profile-btn:hover .profile-img-wrapper {
+            transform: scale(1.08);
+            outline-color: white;
+          }
+          
+          .profile-name {
+            transition: color 0.3s ease-out;
+          }
+          
+          .profile-btn:hover .profile-name {
+            color: white;
+          }
+        `}</style>
+
+        <div className="profile-img-wrapper w-full aspect-square overflow-hidden rounded-sm">
           <img
             src={profile.avatar}
             alt={profile.alt}
-            className="w-full h-full object-cover outline outline-2 outline-transparent group-hover:outline-white transition-all duration-300"
+            className="w-full h-full object-cover"
           />
         </div>
-        <span className="text-[1.2vw] text-[#808080] group-hover:text-white transition-colors duration-300 font-normal">
+        <span className="profile-name text-[1.2vw] text-[#808080] font-normal">
           {profile.name}
         </span>
       </button>
