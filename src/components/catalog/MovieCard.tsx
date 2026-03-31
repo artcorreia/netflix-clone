@@ -20,7 +20,7 @@ export function MovieCard({ movie }: MovieCardProps) {
 
   return (
     <div
-      className="relative w-62.5 min-w-62.5 h-35 bg-[#222] rounded-sm cursor-pointer"
+      className="relative w-40 sm:w-44 md:w-52 lg:w-62.5 min-w-40 sm:min-w-44 md:min-w-52 lg:min-w-62.5 h-24 sm:h-28 md:h-32 lg:h-35 bg-[#222] rounded-sm cursor-pointer shrink-0"
       style={{ transformOrigin }}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}

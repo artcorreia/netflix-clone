@@ -14,18 +14,18 @@ export function ProfilePage() {
   }
 
   return (
-    <main className="bg-[#141414] text-white min-h-screen flex items-center justify-center font-['Geist',sans-serif]">
-      <div className="text-center w-full max-w-300 px-5">
-        <h1 className="text-[3.5vw] font-light mb-8 tracking-wide">
+    <main className="bg-[#141414] text-white min-h-screen flex items-center justify-center font-['Geist',sans-serif] px-4">
+      <div className="text-center w-full max-w-300 px-4 sm:px-6">
+        <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-[3.5vw] font-light mb-6 sm:mb-8 tracking-wide">
           Quem está assistindo?
         </h1>
 
         <ProfileList profiles={profiles} onSelect={handleSelectProfile} />
 
-        <section className="mt-5">
+        <section className="mt-4 sm:mt-5">
           <button
             type="button"
-            className="bg-transparent border border-gray-500 text-gray-500 px-8 py-2.5 text-[1vw] uppercase tracking-widest cursor-pointer font-light transition-all duration-300 hover:border-[#e5e5e5] hover:text-[#e5e5e5]"
+            className="bg-transparent border border-gray-500 text-gray-500 px-6 sm:px-8 py-2 sm:py-2.5 text-sm sm:text-base md:text-lg lg:text-[1vw] uppercase tracking-widest cursor-pointer font-light transition-all duration-300 hover:border-[#e5e5e5] hover:text-[#e5e5e5]"
           >
             Gerenciar perfis
           </button>

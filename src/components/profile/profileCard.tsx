@@ -7,10 +7,10 @@ interface ProfileCardProps {
 
 export function ProfileCard({ profile, onClick }: ProfileCardProps) {
   return (
-    <li className="w-[10vw] min-w-30 max-w-50">
+    <li className="w-20 sm:w-24 md:w-28 lg:w-30 min-w-20 sm:min-w-24 md:min-w-28 max-w-36 sm:max-w-40 md:max-w-50">
       <button
         onClick={onClick}
-        className="flex flex-col items-center gap-2 w-full bg-transparent border-none cursor-pointer profile-btn"
+        className="flex flex-col items-center gap-1 sm:gap-2 w-full bg-transparent border-none cursor-pointer profile-btn"
       >
         <style>{`
           .profile-img-wrapper {
