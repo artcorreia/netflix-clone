@@ -3,7 +3,7 @@ import { useCardHover } from '../../hooks/useCardHover'
 import { getYouTubeId } from '../../utils/youtube'
 import { CardDetail } from './CardDetail'
 import { MovieBadge } from './MovieBadge'
-import { ProgressBar } from './ProgressBar'
+import { ProgressBar } from './Progressbar'
 
 interface MovieCardProps {
   movie: Movie
